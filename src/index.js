@@ -45,4 +45,4 @@ console.log(maiorOuIgual(1, 2)); // false
 console.log(maiorOuIgual(1, 0)); // true
 console.log(maiorOuIgual(2, 2)); // true
 console.log(maiorOuIgual(1, "1")); // false
-console.log(maiorOuIgual(5, 1)); // true
+console.log(maiorOuIgual(5, 1));
