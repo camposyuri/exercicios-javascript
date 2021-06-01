@@ -36,3 +36,13 @@ function receberNomeDoMes(numero) {
 }
 
 console.log(receberNomeDoMes(1));
+
+function maiorOuIgual(num1, num2) {
+  return num1 > num2 || num1 === num2 ? true : false;
+}
+
+console.log(maiorOuIgual(1, 2)); // false
+console.log(maiorOuIgual(1, 0)); // true
+console.log(maiorOuIgual(2, 2)); // true
+console.log(maiorOuIgual(1, "1")); // false
+console.log(maiorOuIgual(5, 1)); // true
