@@ -29,7 +29,7 @@ function receberNomeDoMes(numero) {
     "setembro",
     "outubro",
     "novembro",
-    "dezembro"
+    "dezembro",
   ];
 
   return mapeamento[--numero];
@@ -46,3 +46,32 @@ console.log(maiorOuIgual(1, 0)); // true
 console.log(maiorOuIgual(2, 2)); // true
 console.log(maiorOuIgual(1, "1")); // false
 console.log(maiorOuIgual(5, 1));
+
+const inverso = (valor) => {
+  if (typeof valor === "boolean") {
+    return !valor;
+  } else if (typeof valor === "number") {
+    return -valor;
+  } else {
+    return "retornará booleano ou números esperado, mas o parâmetro é do tipo string";
+  }
+};
+
+console.log(inverso(false));
+
+const estaEntre = (minimo, maximo, numero, inclusivo = false) => {
+  return inclusivo
+    ? numero >= minimo && numero <= maximo
+    : numero > minimo && numero < maximo;
+};
+
+console.log(estaEntre(10, 100, 50));
+
+const multiplicar = (num1, num2) => {
+  if (num1 >= 0 && num2 >= 0) {
+    return "i".repeat(num1).repeat(num2).length;
+  }
+  return "Os números tem que ser maior ou igual a zero";
+};
+
+console.log(multiplicar(0, 2));
